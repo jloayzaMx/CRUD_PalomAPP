@@ -1,0 +1,16 @@
+{
+    "name": "Mx/crud",
+    "description": "CRUD",
+    "type": "php-pdo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "José Loayza",
+            "email": "jose_18_06@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "Mx/crud": "^1.0"
+    }
+}
