@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Mantenimiento Plato</title>
+        <title>Mantenimiento Administrador</title>
  
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
         <!-- Include custom CSS. -->

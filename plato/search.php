@@ -13,7 +13,7 @@ if(isset($_GET['keyword'])){
     $meta = $sth->getColumnMeta(1);
     $field = $meta['name'];
 
-    $sql = "select * from $table WHERE $field LIKE :keyword order by id_$table";
+    $sql = "select * from $table WHERE $field LIKE :keyword order by id";
 
     $sth = $pdo->prepare($sql);
     $sth->bindValue(":keyword", $keyword."%");
@@ -52,8 +52,8 @@ print '<h4>Registro(s) encontrado(s)</h4>';
             <?php
             }
 ?>
-            <td><a href="update.php?id=<?=$row['id_administrador']?>"><i class="glyphicon glyphicon-edit" title="Edit"></a></td>
-            <td><a href="delete.php?id=<?=$row['id_administrador']?>"><i class="glyphicon glyphicon-remove-circle" title="Delete"></a></td></tr>
+            <td><a href="update.php?id=<?=$row['id']?>"><i class="glyphicon glyphicon-edit" title="Edit"></a></td>
+            <td><a href="delete.php?id=<?=$row['id']?>"><i class="glyphicon glyphicon-remove-circle" title="Delete"></a></td></tr>
 <?php
         echo "</tr>";
     }

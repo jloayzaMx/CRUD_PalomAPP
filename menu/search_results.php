@@ -30,7 +30,7 @@ include '../db_connect.php';
 include '../libs/ps_pagination.php';
  
 
-$sql = "select * from $table order by id_$table";
+$sql = "select * from $table order by id";
  
 
 $pager = new PS_Pagination($pdo, $sql, 15, 23);
@@ -68,8 +68,8 @@ if($num >= 0 ){
             <?php
             }
 ?>
-            <td><a href="update.php?id=<?=$row['id_administrador']?>"><i class="glyphicon glyphicon-edit" title="Update"></a></td>
-            <td><a href="delete.php?id=<?=$row['id_administrador']?>"><i class="glyphicon glyphicon-remove-circle" title="Delete"></a></td></tr>
+            <td><a href="update.php?id=<?=$row['id']?>"><i class="glyphicon glyphicon-edit" title="Update"></a></td>
+            <td><a href="delete.php?id=<?=$row['id']?>"><i class="glyphicon glyphicon-remove-circle" title="Delete"></a></td></tr>
 <?php
         echo "</tr>";
     }

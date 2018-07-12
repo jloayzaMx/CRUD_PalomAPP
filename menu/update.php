@@ -68,7 +68,7 @@ if(isset($_POST['send'])){
 		}
 	}
 
-    $sql = "UPDATE $table SET $set WHERE id_$table = :id";
+    $sql = "UPDATE $table SET $set WHERE id = :id";
     $sth = $pdo->prepare($sql);
 
 

@@ -16,7 +16,7 @@ print '<h3 align="center">'.ucfirst($table).'</h3>';
 
 <?php
 
-$sth = $pdo->prepare("SELECT * from $table WHERE id_$table = :id");
+$sth = $pdo->prepare("SELECT * from $table WHERE id = :id");
 $sth->bindValue(':id', $id, PDO::PARAM_STR);
 $sth->execute();
 
@@ -48,7 +48,7 @@ $reg = $sth->fetch(PDO::FETCH_OBJ);
 
 if(isset($_POST['enviar'])){
     $id = $_POST['id'];
-    $sql = "DELETE FROM  $table WHERE id_$table = :id";
+    $sql = "DELETE FROM  $table WHERE id = :id";
     $sth = $pdo->prepare($sql);
     $sth->bindParam(':id', $id, PDO::PARAM_INT);   
     if( $sth->execute()){
