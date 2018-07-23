@@ -28,11 +28,17 @@ img {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+          
+          <li ><a href="disponibilidad/index.php">Disponibilidad</a></li>
+          <li ><a href="laboratorio/index.php">Laboratorio</a></li>
+          <li ><a href="local/index.php">Local</a></li>
+          <li ><a href="menu/index.php">Menu</a></li>
+          <li ><a href="objetos_perdidos/index.php">Objetos Perdidos</a></li>
+          <li ><a href="plato/index.php">Plato</a></li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="admin/login.php"><span class="glyphicon glyphicon-user"></span> Ingresar</a></li>
-          
+
       </ul>
     </div>
   </div>

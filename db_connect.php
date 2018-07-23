@@ -1,4 +1,5 @@
 <?php
+session_start();
 $host = 'ec2-54-243-213-188.compute-1.amazonaws.com';
 $port = '5432';
 $db   = 'dfip05gaio33q9';
@@ -9,7 +10,6 @@ $sgbd='pgsql';      // pgsql, mysql
 $ssl='require';
 
 
-
 $opt = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -18,7 +18,7 @@ $opt = [
 ];
 
 try {    $pdo = new PDO("$sgbd:host=$host;port=$port;dbname=$db;sslmode=$ssl;", $user, $pass, $opt);
-
+         
 
 }catch(PDOException $e){
     echo '<br><br><b>Mensaje</b>: '. $e->getMessage().'<br>';

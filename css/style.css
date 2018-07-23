@@ -17,14 +17,14 @@
     border: none;
     padding: 5px;
     text-decoration: none;
-    border: 3px solid #DFF0D8;
-    background-color: #D9EDF7;
+    border: 3px solid #1C93A0;
+    background-color: #1C93A0;
     color: #000;
 }
  
 .page-nav a:hover{
     border: thin solid #FC0;
-    background-color: #379305;
+    background-color: #1C93A0;
     color: #fff;
 }
  
