@@ -42,14 +42,15 @@ if(isset($_POST['enviar'])){
     //print_r($result);
     //die();
     if($result){
-    $profile = $result[0]['usuario'];  
-    switch ($profile){
-    case 'mx':
-        print "<script>location='../admi.php';</script>";
-        break;
-    default :
-        print "<script>location='../usuario.php';</script>";
-    }
+        $_SESSION['user_id'] = 'mx';
+        $profile = $result[0]['usuario'];  
+        switch ($profile){
+        case 'mx':
+            print "<script>location='../admi.php';</script>";
+            break;
+        default :
+            print "<script>location='../usuario.php';</script>";
+        }
         
         
     }else{

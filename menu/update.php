@@ -1,4 +1,10 @@
 <?php
+session_start();
+if ( isset( $_SESSION['user_id'] ) ) {
+} else {
+   
+    header("Location: ../login.php");
+}
 require_once('./header.php');
 require_once('../db_connect.php');
 require_once('./tabla.php');

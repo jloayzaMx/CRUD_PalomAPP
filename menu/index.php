@@ -1,3 +1,11 @@
+<?php
+session_start();
+if ( isset( $_SESSION['user_id'] ) ) {
+} else {
+   
+    header("Location: ../login.php");
+}
+?>
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -28,7 +36,7 @@
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-
+          <li><a href="../logout.php"><span class="glyphicon glyphicon-log-in"></span>Cerrar Sesión</a></li>
       </ul>
     </div>
   </div>

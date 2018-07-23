@@ -1,3 +1,11 @@
+<?php
+session_start();
+if ( isset( $_SESSION['user_id'] ) ) {
+} else {
+   
+    header("Location: ../login.php");
+}
+?>
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -24,11 +32,13 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+          
           <li class="active"><a href="index.php">Administrador</a></li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-
+          <li><a href="../logout.php"><span class="glyphicon glyphicon-log-in"></span>Cerrar Sesión</a></li>
+          
       </ul>
     </div>
   </div>

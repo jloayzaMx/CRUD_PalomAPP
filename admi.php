@@ -38,7 +38,7 @@ img {
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-
+          <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span>Cerrar Sesión</a></li>  
       </ul>
     </div>
   </div>
