@@ -26,7 +26,7 @@ print '<h3 align="center">'.ucfirst($table).'</h3>';
 
 <?php
 
-$sth = $pdo->prepare("SELECT * from $table WHERE id_$table = :id");
+$sth = $pdo->prepare("SELECT * from $table WHERE id = :id");
 $sth->bindValue(':id', $id, PDO::PARAM_STR); 
 $sth->execute();
 

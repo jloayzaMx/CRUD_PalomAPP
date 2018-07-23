@@ -49,6 +49,10 @@ $reg = $sth->fetch(PDO::FETCH_OBJ);
                 <input name="send" class="btn btn-warning" type="button" onclick="location='index.php?table=<?=$table?>'" value="Back"></td></tr>
                 </table>
             </form>
+                                <br/>
+    <center><a href="https://ibb.co/j88N7T" target="_blank"><img src="https://thumb.ibb.co/j88N7T/sube.jpg" alt="sube" border="0" ></a><br/>
+sube la imagen a esta pagina y copia el direct link a img_plato
+</center>
         </div>
     <div>
 </div>

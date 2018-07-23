@@ -40,6 +40,9 @@ print '<h3 align="center">'.ucfirst($table).'</h3>';
             <input class="btn btn-warning" name="send" type="button" onclick="location='<?=$tb?>'" value="Back"></td></tr>
             </form>
         </table>
+                <center><a href="https://ibb.co/j88N7T" target="_blank"><img src="https://thumb.ibb.co/j88N7T/sube.jpg" alt="sube" border="0" ></a><br/>
+sube la imagen a esta pagina y copia el direct link a img
+</center>
         </div>
     </div>
 </div>

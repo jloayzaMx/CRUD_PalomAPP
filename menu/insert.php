@@ -40,6 +40,8 @@ print '<h3 align="center">'.ucfirst($table).'</h3>';
             <input class="btn btn-warning" name="send" type="button" onclick="location='<?=$tb?>'" value="Back"></td></tr>
             </form>
         </table>
+            
+</div>
         </div>
     </div>
 </div>
@@ -77,7 +79,7 @@ if(isset($_POST['send'])){
 		$sth->bindParam(":$field", $_POST["$field"], PDO::PARAM_INT);
 	}
     $executa = $sth->execute();
-
+    
     if($executa){
          print "<script>location='$tb';</script>";
     }else{
